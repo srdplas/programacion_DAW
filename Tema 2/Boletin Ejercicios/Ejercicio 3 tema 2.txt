@@ -1,0 +1,26 @@
+Ejercicio 3
+
+a	int
+b	float
+c	int
+d	long
+f	double
+g	long
+h	double
+i	int
+
+
+Ejercicio 6
+
+1 false		7 false
+2 true		8 true
+3 false		9 false
+4 true 		10 true
+5 false
+6 false
+
+
+si X se cumple y Y se cumple y E se cumple... entonces true
+// Se tiene que cumplir todo para que sea true
+Si X se cumple o Y se cumple(solo con eso ya sería true) o E se cumple o R no se cumple = true
+//Con que se cumpla 1 de las condiciones el resultado es true;

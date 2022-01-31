@@ -1,0 +1,6 @@
+Cuando un metodo es final significa que ese metodo no se va a heredar a una subclase, queda "estéril" por 
+lo que solo lo podrá usar la clase que lo contenga ahi acaba el método.
+
+
+Cuando un metodo es abstracto primero obliga a la clase a ser abstracta, y el codigo de este metodo 
+debe ir sin codigo ni corchetes,  abstract void ejemplo(); y deberá ser sobreescrito por las subclases
