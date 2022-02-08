@@ -1,0 +1,51 @@
+package srdplas.prog.e4;
+
+import java.util.*;
+
+public class NombreDePerros {
+
+	public static void main(String[] args) {
+		List<String> nombres = new ArrayList<String>();
+		
+		Scanner sn = new Scanner(System.in);
+		//Añadimos los nombres
+		nombres.add("Toby");
+		nombres.add("Rocky");
+		nombres.add("Max");
+		nombres.add("Pancho");
+		nombres.add("Coco");
+		nombres.add("Chispa");
+		
+		
+		
+		System.out.println("Actualmente conozco "+nombres.size()+" Te los digo");
+		Iterator<String> recorre = nombres.iterator();
+		while(recorre.hasNext()) {
+			String perros = (String)(recorre.next());
+			System.out.println(perros);
+		}
+		
+		System.out.println("Tambien puedo decirtelos ordenados de forma alfabeticamente");
+		Collections.sort(nombres);
+		recorre = nombres.iterator();
+		while(recorre.hasNext()) {
+			String perros = (String) (recorre.next());
+			System.out.println(perros);
+		}
+		
+		System.out.println("Enseñanos mas nombres de perros");
+		String indica;
+
+		do {
+			indica=sn.nextLine().toUpperCase();
+			if(indica!="FIN") {
+				nombres.add(indica);
+			}
+			
+		}while(!("FIN".equals(indica)));
+		
+		System.out.println("Gracias ahora conozco "+nombres.size());
+		System.out.println(nombres);
+	}
+
+}

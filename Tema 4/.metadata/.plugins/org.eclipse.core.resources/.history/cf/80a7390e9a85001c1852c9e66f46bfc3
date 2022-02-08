@@ -1,0 +1,10 @@
+package srdplas.e7;
+
+public class PruebaOrdenPersonas {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

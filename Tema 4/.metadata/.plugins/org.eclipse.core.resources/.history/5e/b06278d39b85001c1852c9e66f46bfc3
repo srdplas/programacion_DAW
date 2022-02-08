@@ -1,0 +1,25 @@
+package srdplas.e7;
+
+import java.util.*;
+
+public class PruebaOrdenPersonas {
+
+	public static void main(String[] args) {
+		List<Persona> personas = new ArrayList<Persona>();
+		
+		Persona p =new Persona("pepe", "2987F", 17);
+		Persona p2 =new Persona("fran", "2792V", 40);
+		Persona p3 =new Persona("antonio", "1234A", 40);
+		
+		personas.add(p);
+		personas.add(p2);
+		personas.add(p3);
+		Iterator<Persona> iterator=personas.iterator();
+		while(iterator.hasNext())
+			Persona look = (Persona) (iterator.);
+			
+		System.out.println(personas);
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\srdpl\Desktop\CursoDAW\Curso 2021-2022\Programacion\Tema 4\.metadata\.plugins\org.eclipse.jdt.core
+1729087227.index
+151804612.index
+1865797976.index

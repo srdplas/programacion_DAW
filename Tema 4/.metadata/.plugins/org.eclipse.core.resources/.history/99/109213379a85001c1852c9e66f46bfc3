@@ -1,0 +1,14 @@
+package srdplas.e7;
+
+import java.util.*;
+
+public class PruebaOrdenPersonas {
+
+	public static void main(String[] args) {
+		
+		List personas = new ArrayList();
+		personas.add(new Persona("pepe", "2987F", 17));
+
+	}
+
+}
