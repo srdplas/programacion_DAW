@@ -1,0 +1,27 @@
+package srdplas.e12;
+
+import java.util.HashSet;
+import java.util.*;
+public class OperacionesConjuntos {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		
+		Set<String>buscaPolicia = new HashSet<String>();
+		Set<String>buscaGuardia = new HashSet<String>();
+		
+		buscaPolicia.add("12345678A");
+		buscaPolicia.add(null);
+		buscaPolicia.add(null);
+		buscaPolicia.add(null);
+		
+		buscaGuardia.add(null);
+		buscaGuardia.add(null);
+		buscaGuardia.add(null);
+		buscaGuardia.add(null);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package srdplas.e17;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+public class PruebaCliente {
+
+	public static void main(String[] args) {
+		
+		Map clientes = new HashMap();
+
+		Cliente c = new Cliente(001, "Manolo", "Fernandez");
+		Cliente c2 = new Cliente(002, "Antonio", "Perez");
+		Cliente c3 = new Cliente(003, "Yuri", "Rodriguez");
+		
+		clientes.put(c.getIdCliente(), c);
+	}
+
+}

@@ -1,0 +1,43 @@
+package srdplas.e14;
+
+import java.util.HashSet;
+import java.util.*;
+
+public class PruebaTelefonos {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		Scanner sn = new Scanner(System.in);
+		Set<Integer>permitidos = new HashSet<Integer>();
+		Set<Integer>prohibidos = new HashSet<Integer>();
+		
+		System.out.println("Introduce los numeros de telefonos permitidos");
+		int tel;
+		
+		
+		do {
+			tel=sn.nextInt();
+			
+			if(tel>0) {
+				permitidos.add(tel);
+			}
+			
+		}while(tel>0&&tel!=0);
+		
+		System.out.println("Introduce los numeros de telefonos permitidos");
+		tel;
+		
+		
+		do {
+			tel=sn.nextInt();
+			
+			if(tel>0) {
+				permitidos.add(tel);
+			}
+			
+		}while(tel>0&&tel!=0);
+		
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package srdplas.e16;
+
+public class Autores {
+
+	private String nombre, apellidos, nacionalidad;
+
+	public Autores(String nombre, String apellidos, String nacionalidad, int codID) {
+		this.codID=codID;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.nacionalidad = nacionalidad;
+	}
+
+	@Override
+	public String toString() {
+		return "Autores [nombre=" + nombre + ", apellidos=" + apellidos + ", nacionalidad=" + nacionalidad + "]";
+	}
+
+	
+	
+}

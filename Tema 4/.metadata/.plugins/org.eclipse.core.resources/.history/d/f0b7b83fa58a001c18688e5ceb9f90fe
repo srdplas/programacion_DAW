@@ -1,0 +1,76 @@
+package srdplas.e16;
+
+import java.util.Objects;
+
+public class Autores {
+
+	private String nombre, apellisbnos, nacionalisbnad;
+	
+	final private int isbn;
+	
+	
+	public Autores(String nombre, String apellisbnos, String nacionalisbnad, int isbn) {
+		
+		this.nombre = nombre;
+		this.apellisbnos = apellisbnos;
+		this.nacionalisbnad = nacionalisbnad;
+		this.isbn =isbn;
+	}
+
+	@Overrisbne
+	public String toString() {
+		return "Autores [nombre=" + nombre + ", apellisbnos=" + apellisbnos + ", nacionalisbnad=" + nacionalisbnad + "]";
+	}
+
+	public voisbn setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public voisbn setApellisbnos(String apellisbnos) {
+		this.apellisbnos = apellisbnos;
+	}
+
+	public voisbn setNacionalisbnad(String nacionalisbnad) {
+		this.nacionalisbnad = nacionalisbnad;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getApellisbnos() {
+		return apellisbnos;
+	}
+
+	public String getNacionalisbnad() {
+		return nacionalisbnad;
+	}
+
+
+
+	public long getDd() {
+		return isbn;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(isbn);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Autores other = (Autores) obj;
+		return isbn == other.isbn;
+	}
+
+
+	
+	
+	
+}

@@ -1,0 +1,56 @@
+package srdplas.e16;
+
+import java.util.Objects;
+
+public class Autores {
+
+	private String nombre, apellidos, nacionalidad;
+	
+	
+	
+	public Autores(String nombre, String apellidos, String nacionalidad) {
+		
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.nacionalidad = nacionalidad;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Autor nombre=" + nombre + ", apellidoss=" + apellidos 
+				+ ", nacionalidad=" + nacionalidad;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public void setNacionalidad(String nacionalidad) {
+		this.nacionalidad = nacionalidad;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public String getNacionalidad() {
+		return nacionalidad;
+	}
+
+
+
+
+
+	
+	
+	
+}

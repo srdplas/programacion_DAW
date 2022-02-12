@@ -1,0 +1,11 @@
+package srdplas.e15;
+
+public class PruebaSetPersona {
+
+	public static void main(String[] args) {
+		
+		Persona p = new Persona("1234A", "Yuri", "Zayas", null, 0, 0, false, false)
+
+	}
+
+}

@@ -1,0 +1,210 @@
+package srdplas.e16;
+
+import java.util.*;
+
+public class Recurso {
+
+	private int numeroEjemplar;
+	final private long isbn;
+
+	private String nombre;
+	@SuppressWarnings("unchecked")
+	private List<Autores>listaAutores=new List<Autores>() {
+		
+		@Override
+		public <T> T[] toArray(T[] a) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public Object[] toArray() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public List<Autores> subList(int fromIndex, int toIndex) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public int size() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+		@Override
+		public Autores set(int index, Autores element) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public boolean retainAll(Collection<?> c) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public boolean removeAll(Collection<?> c) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public Autores remove(int index) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public boolean remove(Object o) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public ListIterator<Autores> listIterator(int index) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public ListIterator<Autores> listIterator() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public int lastIndexOf(Object o) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+		@Override
+		public Iterator<Autores> iterator() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public boolean isEmpty() {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public int indexOf(Object o) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+		@Override
+		public Autores get(int index) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+		@Override
+		public boolean containsAll(Collection<?> c) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public boolean contains(Object o) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public void clear() {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public boolean addAll(int index, Collection<? extends Autores> c) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public boolean addAll(Collection<? extends Autores> c) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+		@Override
+		public void add(int index, Autores element) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public boolean add(Autores e) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+	};
+	
+	
+	@SuppressWarnings("unchecked")
+	public Recurso(String nombre, int numeroEjemplar, long isbn) {
+		
+		this.isbn = isbn;
+		this.numeroEjemplar = numeroEjemplar;
+		this.nombre = nombre;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Recursos ISBN=" + isbn + ", numeroEjemplar "+numeroEjemplar + ", nombre " + nombre
+				+ ", listaAutores " + listaAutores;
+	}
+
+
+
+	public void setNumeroEjemplar(int numeroEjemplar) {
+		this.numeroEjemplar = numeroEjemplar;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	
+	public long getIsbn() {
+		return isbn;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(isbn);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Recurso other = (Recurso) obj;
+		return isbn == other.isbn;
+	}
+	
+//	public int getId() {
+//		return id;
+//	}
+
+
+
+
+	
+
+}

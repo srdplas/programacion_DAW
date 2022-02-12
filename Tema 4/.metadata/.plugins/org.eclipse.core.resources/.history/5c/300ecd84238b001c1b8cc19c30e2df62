@@ -1,0 +1,72 @@
+package srdplas.e18;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.*;
+
+public class MapaHabitaciones {
+
+	@SuppressWarnings("unchecked")
+	public static void main(String[] args) {
+		Scanner sn = new Scanner(System.in);
+		Map estadoHabitaciones = new HashMap();
+		boolean ocupada;
+
+		estadoHabitaciones.put(101, ocupada = false);
+		estadoHabitaciones.put(102, ocupada = true);
+		estadoHabitaciones.put(103, ocupada = true);
+		estadoHabitaciones.put(104, ocupada = false);
+		estadoHabitaciones.put(105, ocupada = true);
+		estadoHabitaciones.put(201, ocupada = true);
+		estadoHabitaciones.put(202, ocupada = false);
+		estadoHabitaciones.put(203, ocupada = false);
+		estadoHabitaciones.put(204, ocupada = true);
+		estadoHabitaciones.put(205, ocupada = false);
+
+		int opcion;
+		do {
+			
+			System.out.printf("%15s","\n------  MENU  ------\n");
+			System.out.println("\n0 - SALIR\n");
+			System.out.println("1 - VER ESTADO DE OCUPACION\n");
+			System.out.println(("2 - OCUPAR HABITACION\n"));
+			System.out.println("3 - LIBERAR HABITACION\n");
+			opcion = sn.nextInt();
+			
+			switch (opcion) {
+			case 0: 
+				System.out.println("SALIENDO..");
+				break;
+			
+			case 1:
+				System.out.println("ESTADO DE OCUPACION");
+				Set <Integer>habs=estadoHabitaciones.keySet();
+				Iterator<Integer>iterador=habs.iterator();
+				while(iterador.hasNext()) {
+					Integer revisar=(Integer)(iterador.next());
+					System.out.println("Habitacion: "+revisar);
+					if((boolean) estadoHabitaciones.get(revisar)==true) 
+						System.out.print("Libre");
+					else System.out.print("Ocupada");
+						
+				}
+					
+				}
+				
+			
+			case 2: 
+				
+			case 3: 
+				
+			
+			default:
+			if(opcion>3)
+				System.out.println("Opcion no soportado");	
+			}
+
+		} while (opcion != 0);
+
+	}
+
+}

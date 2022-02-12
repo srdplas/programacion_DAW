@@ -1,0 +1,10 @@
+package srdplas.e15;
+
+public class Persona {
+
+	private String dni;
+	private String nombre, apellidos, direccion;
+	private int edad, telefono;
+	private boolean trabaja, casado;
+	
+}

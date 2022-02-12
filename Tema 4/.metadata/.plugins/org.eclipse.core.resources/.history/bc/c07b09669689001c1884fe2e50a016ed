@@ -1,0 +1,10 @@
+package srdplas.e13;
+
+public class PruebaLoteria {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

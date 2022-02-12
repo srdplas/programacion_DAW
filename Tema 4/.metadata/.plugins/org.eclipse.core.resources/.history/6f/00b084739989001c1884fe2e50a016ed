@@ -1,0 +1,43 @@
+package srdplas.e13;
+import java.util.*;
+public class PruebaLoteria {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		Scanner sn = new Scanner(System.in);
+		Set<Integer> numeros= new HashSet<Integer>();
+		Iterator iterador;
+		System.out.println("GORDO DE NAVIDAD");
+		System.out.println("Introduce los numeros de la loteria vendidos");
+		Integer loteria = 0;
+//		Integer objetoInteger = new Integer(loteria);
+		
+		do{
+			loteria =sn.nextInt();
+			
+			if(loteria!=-1) {
+
+				numeros.add(loteria);
+			}
+			
+			
+		}while(loteria!=-1);
+		
+		System.out.println("Ahora indica el numero del Gordo de Navidad");
+		loteria=sn.nextInt();
+		iterador=numeros.iterator();
+		
+		while(iterador.hasNext()) {
+			Integer leer = (Integer)(iterador.next());
+			if(leer==loteria){
+				System.out.println(leer);
+			}else {
+				System.out.println("Este numero no ha sido vendido en esta sucursal");
+				break;
+			}
+		}
+		
+
+	}
+
+}

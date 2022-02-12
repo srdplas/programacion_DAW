@@ -1,0 +1,12 @@
+package srdplas.e11;
+
+import java.util.*;
+
+public class PruebaConjuntos {
+
+	public static void main(String[] args) {
+		set candidatos = new HashSet<E>();
+
+	}
+
+}

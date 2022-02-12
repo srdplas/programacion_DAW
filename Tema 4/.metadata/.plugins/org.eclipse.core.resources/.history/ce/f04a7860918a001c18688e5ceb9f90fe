@@ -1,0 +1,14 @@
+package srdplas.e16;
+
+public class Autores {
+
+	private String nombre, apellidos, nacionalidad;
+
+	public Autores(String nombre, String apellidos, String nacionalidad) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.nacionalidad = nacionalidad;
+	}
+
+}

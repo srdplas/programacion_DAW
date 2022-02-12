@@ -1,0 +1,9 @@
+package srdplas.e17;
+
+public class Cliente {
+
+
+	private int idCliente;
+	private String nombre, apellidos;
+	
+}

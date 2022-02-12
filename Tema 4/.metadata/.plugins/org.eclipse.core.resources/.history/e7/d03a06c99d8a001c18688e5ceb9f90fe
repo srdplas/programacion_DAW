@@ -1,0 +1,56 @@
+package srdplas.e16;
+
+import java.util.*;
+
+public class Recurso {
+
+	private int numeroEjemplar;
+	private final int isbn;
+	private final int id;
+	private String nombre;
+	@SuppressWarnings("unchecked")
+	private Set<Autores>listaAutores;
+	
+	public Recurso(String nombre, int numeroEjemplar, int isbn, Autores a, int id) {
+		
+		lisSet = new <Autores>HashSet(lisSet);
+		this.isbn = isbn;
+		this.numeroEjemplar = numeroEjemplar;
+		this.nombre = nombre;
+		this.id=id;
+	}
+
+	@Override
+	public String toString() {
+		return "Recursos [isbn=" + isbn + ", numeroEjemplar=" + numeroEjemplar + ", nombre=" + nombre
+				+ ", listaAutores=" + listaAutores + "codId= " +"]";
+	}
+
+
+
+	public void setNumeroEjemplar(int numeroEjemplar) {
+		this.numeroEjemplar = numeroEjemplar;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setListaAutores(Set<Autores> listaAutores) {
+		this.listaAutores = new <Autores>HashSet(listaAutores);
+	}
+
+	
+
+	
+	public int getIsbn() {
+		return isbn;
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	
+
+}

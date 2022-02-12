@@ -1,0 +1,14 @@
+package srdplas.e12;
+
+import java.util.HashSet;
+
+public class OperacionesConjuntos {
+
+	public static void main(String[] args) {
+		
+		Set <String>buscaPolicia = new HashSet<String>();
+		
+		
+	}
+
+}

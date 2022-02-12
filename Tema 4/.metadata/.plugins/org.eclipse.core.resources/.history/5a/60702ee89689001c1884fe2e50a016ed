@@ -1,0 +1,15 @@
+package srdplas.e13;
+import java.util.*;
+public class PruebaLoteria {
+
+	public static void main(String[] args) {
+		Scanner sn = new Scanner(System.in);
+		Set <Integer>numeros= new HashSet<Integer>();
+		System.out.println("GORDO DE NAVIDAD");
+		
+	
+		
+
+	}
+
+}
