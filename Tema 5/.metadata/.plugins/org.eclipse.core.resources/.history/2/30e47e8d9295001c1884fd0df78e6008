@@ -1,0 +1,30 @@
+package srdplas.ep;
+
+public class PruebaPuertaUrbanizacion {
+
+	public static void main(String[] args) {
+	PuertaUrbanizacion p = new PuertaUrbanizacion();
+	//CREAMOS 1 PUERTA DE URBANIZACION
+	Tarjeta t = new Tarjeta(124, "Yuri");
+	Tarjeta t2 = new Tarjeta(222, "Pepe");
+	Tarjeta t3 = new Tarjeta(333, "Antonio");
+	Tarjeta t4 = new Tarjeta(333, "Rosa");
+	//CREAMOS 4 TARJETAS 
+	
+	p.agregaTarjetaPermitida(t);
+	p.agregaTarjetaPermitida(t3);
+	p.agregaTarjetaPermitida(t4);
+	//AÑADIMOS 3/4 TARJETAS A LA PUERTA
+	
+	p.imprimeTarjetasPermitidas();
+	//IMPRIMIMOS LAS TARJETAS PERMITIDAS
+	p.intentoDeEntrada(124);
+	p.estadoParking();
+	
+	
+	
+	
+	
+	
+	}
+}

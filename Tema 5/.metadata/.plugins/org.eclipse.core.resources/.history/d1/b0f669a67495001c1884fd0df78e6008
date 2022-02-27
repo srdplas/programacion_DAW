@@ -1,0 +1,15 @@
+package srdplas.ep;
+
+public class Tarjeta {
+	private int identificador;
+	private String nombrePropietario;
+
+	public int getIdentificador() {
+		return identificador;
+	}
+
+	public String getNombrePropietario() {
+		return nombrePropietario;
+	}
+
+}
